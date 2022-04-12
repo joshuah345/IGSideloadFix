@@ -2,6 +2,7 @@
 .theos
 .additional
 packages
-Resources/Rocket.bundle
-Instagram.ipa
-Rocket.dylib
+Resources/*
+!Resources/.gitkeep
+Tweaks/*
+!Tweaks/.gitkeep
