@@ -1,7 +1,6 @@
 .DS_Store
 .theos
 .additional
-packages
 Resources/*
 !Resources/.gitkeep
 Tweaks/*
