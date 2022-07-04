@@ -1,0 +1,9 @@
+Package: com.opa334.hackogram
+Name: Hackogram
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Fix Instagram when sideloaded.
+Maintainer: opa334
+Author: opa334
+Section: Tweaks

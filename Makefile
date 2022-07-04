@@ -1,19 +1,12 @@
-Hackogram_INJECT_DYLIBS = Tweaks/Rocket.dylib
+export ARCHS = arm64 arm64e
+export TARGET = iphone:clang:14.4:14.0
 
-MODULES = jailed
 include $(THEOS)/makefiles/common.mk
-ARCHS = arm64
-CODESIGN_IPA = 0
 FINALPACKAGE = 1
 
 TWEAK_NAME = Hackogram
-DISPLAY_NAME = Instagram
-BUNDLE_ID = com.burbn.instagram
-
+INSTALL_TARGET_PROCESSES = Instagram
 Hackogram_FILES = Init.x SideloadedFixes.x
-Hackogram_IPA = /path//to/Instagram.ipa
 
 include $(THEOS_MAKE_PATH)/tweak.mk
-
-after-package::
-	@rm -rf .theos/_/Payload
+include $(THEOS_MAKE_PATH)/aggregate.mk
