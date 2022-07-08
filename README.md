@@ -1,6 +1,6 @@
 # Sideload Tweaked Instagram
 
-Building: Requires [theos](https://github.com/theos/theos) and [theos-jailed](https://github.com/kabiroberai/theos-jailed) installed.
+Building: Requires [theos](https://github.com/theos/theos) and ~~[theos-jailed](https://github.com/kabiroberai/theos-jailed)~~ installed.
 
 Credit goes to [opa334](https://github.com/opa334/IGSideloadFix)
 
@@ -21,8 +21,4 @@ Credit goes to [opa334](https://github.com/opa334/IGSideloadFix)
 
 7. Export patched binary, strip code signature when prompted
 
-8. Put the patched Rocket dylib into the `Tweaks` folder of this repo
-
-9. Run `make package FINALPACKAGE=1` to compile the IPA
-
-10. Optional: if you want to add more tweaks, put the dylibs in the `Tweaks` folder and its resources (bundle) in the `Resources` folder. Finally, add the dylib's name to the `Makefile`
+8. Inject dylib with azule, sideloadly or some other tool.
